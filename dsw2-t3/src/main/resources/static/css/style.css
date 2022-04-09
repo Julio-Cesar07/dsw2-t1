@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background: #f0f0f5;
+  }
+
+a {
+    text-decoration: none;
+  }
+
+li {
+    list-style: none;
+}
+
+th{
+    margin: 10px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+a::selection{
+    background-color: red;
+}
+
+.navbar{
+    border-bottom: 1px solid;
+}
+.navbar-header{
+      margin: 0 15px;    
+  }
+
+  /* Header */
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #87CEEB;
+    height: 10vh;
+}
+
+#title{
+    font-size: 20px;
+}
+
+/*Sidebar*/
+
+.sidebar{
+    margin: 0;
+
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    
+    flex: 1;
+
+    width: 10vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #87CEEB;
+}
+
+.nav-pills{
+    margin: 20px 15px;
+}
+
+li li.nav-item{
+    margin-top: 20px;
+}
+
+.nav-item + .nav-item{
+    margin-top: 10px;
+}
+
+.nav-item a.nav-link:hover{
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+/*Cadastro*/
+.layout-main{
+    display: flex;
+}
+
+.layout-content{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Titulo Cadastro*/
+
+#navbarsExampleDefault{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar{
+    width: 100%;
+}
+
+/*Tabela cadastro*/
+#cadastro{
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 50vw;
+  border: 1px solid;
+}
+/*Campos do cadastro*/
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.double-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 10px;
+}
+
+.form-group label,.form-group input{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+.btn{
+    margin: 10px 0 10px 10px;
+}
+
+/*Login*/
+.form-group2{
+    display: flex;
+    align-items: center;
+
+    margin-top: 15px;
+    margin-left: 15px;
+
+    font-size: 15px;
+}
+
+#username{
+    margin-left: 25px;
+}
+
+#password{
+    margin-left: 20px;
+    
+}
+
+#login-submit{
+    padding: 5px;
+}
+
+#login-mensagem{
+    margin-left: 15px;
+}
+
+.layout-content{
+    padding: 0;
+}
+
+/* T3 */
+
+#myModal{
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: white;
+    top: 0;
+    margin: 30vh;
+    position: fixed;
+
+    height: 30vh;
+    width: 30vw;
+    opacity: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+#myModal .modal-header{
+    background-color: darkblue;
+    width: 100%;
+
+    padding: 10px;
+    color: white;
+}
+
+#myModal .modal-body{
+    margin: 5px;
+}
+
+
+.close_sidebar{
+    background-color: #87CEEB;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    border-color: #87CEEB;
+
+}
+
+.git-content{
+    display: flex;
+    
+    flex-direction: column;
+    margin: auto;
+}
+
+.git_img{
+    width: 20rem;
+    margin: 5rem auto 0;
+    border: 1px solid;
+}
+
+.git{
+    margin-top: 25px;
+}
+.gitInput{
+    margin: 10px;
+}
+
+
+/*Lista table*/
+
+.table-striped{
+    margin-top: 10px;
+
+}
+
+.tabela tr th, tbody tr td{
+    border: 1px solid;
+}
+
+#table-min{
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .double-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group{
+        width: 30vw;
+    }
+
+    .sidebar{
+        width: 10vw;
+    }
+
+    .nav-item a.nav-link:hover{
+        padding: 0;
+    }
+
+    .table{
+        font-size: 10px;
+    }
+
+    .close_sidebar{
+        background-color: #87CEEB;
+        color: black;
+        font-size: 15px;
+        margin-left: 5px;
+        border-color: #87CEEB;
+    
+    }
+
+}
